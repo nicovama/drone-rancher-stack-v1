@@ -17,7 +17,8 @@ echo "rancher-compose.yml @ ${RANCHER_COMPOSE}"
 cat ${RANCHER_COMPOSE}
 echo ""
 echo "docker-compose.yml @ ${DOCKER_COMPOSE}"
-echo ${DOCKER_COMPOSE}
+cat ${DOCKER_COMPOSE}
+echo ""
 echo ${ACCESSKEY}
 echo ${SECRETKEY}
 echo ${PLUGIN_URL}
