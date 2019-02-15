@@ -23,5 +23,7 @@ cat ${ACCESSKEY}
 echo ""
 cat ${SECRETKEY}
 echo ""
+cat ${PLUGIN_URL}
+echo ""
 echo "Deploying Rancher Stack with force upgrade"
 /bin/rancher --url ${PLUGIN_URL} --access-key ${ACCESSKEY} --secret-key ${SECRETKEY} up --stack ${PLUGIN_STACK} -d -f ${DOCKER_COMPOSE} --rancher-file ${RANCHER_COMPOSE} --pull --force-recreate --confirm-upgrade
