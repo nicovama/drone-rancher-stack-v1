@@ -1,6 +1,4 @@
 #!/bin/sh
-RANCHER_COMPOSE=`find / -name rancher-compose.yml`
-DOCKER_COMPOSE=`find / -name docker-compose.yml`
 if [[ -n $PLUGIN_ACCESSKEY ]]; then
     ACCESSKEY="$PLUGIN_ACCESSKEY"
 fi
