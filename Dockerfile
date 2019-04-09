@@ -1,3 +1,7 @@
 
 FROM python:3.6.8
-FROM dubc/drone-rancher-stack-v1
+ADD script.sh /bin/
+RUN chmod +x /bin/script.sh
+RUN wget https://github.com/rancher/cli/releases/download/v0.6.13/rancher-linux-amd64-v0.6.13.tar.gz
+RUN tar -zxvf rancher-linux* && mv rancher-*/rancher /bin/. && chmod +x /bin/rancher
+ENTRYPOINT /bin/script.sh
